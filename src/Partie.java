@@ -45,6 +45,9 @@ public class Partie {
             this.faireUnTourDeJeu();
             System.out.println(this.joueur1.toString());
             System.out.println(this.joueur2.toString());
+            if (compteurDeTours%3==0){
+                System.out.println("la plus grande carte de joueur2 est " + joueur2.tricher1());
+            }
             System.out.println();
         }
 

@@ -67,6 +67,10 @@ public class Essai {
         //5
         System.out.println(" comparer les deux carte "+c1.compareTo(c2));
 
+        //6
+        System.out.println("la plus grande carte de joueur1 : "+ joueur1.tricher1());
+        System.out.println("la plus grande carte de joueur2 : "+ joueur2.tricher1());
+
     }
 
 }

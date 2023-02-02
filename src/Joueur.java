@@ -53,6 +53,16 @@ public class Joueur {
     public boolean resteCarte () {
         return !this.cartes.isEmpty();
     }
+    public Carte tricher1(){
+
+        Carte plusGrandeCarte = cartes.get(0);
+        for(int i = 0; i < this.cartes.size(); i++){
+            if(cartes.get(i).getValeur() > plusGrandeCarte.getValeur()){
+                plusGrandeCarte=cartes.get(i);
+            }
+        }
+        return plusGrandeCarte;
+    }
 
     public String toString() {
         return this.nom + " : " + this.cartes.toString();

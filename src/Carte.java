@@ -20,6 +20,9 @@ public class Carte {
     public int getValeur() {
         return valeur;
     }
+    public String getCouleur() {
+        return couleur;
+    }
 
     public Carte (int valeur, String couleur) {
         this.valeur = valeur;
@@ -55,4 +58,10 @@ public class Carte {
         }
     }
 
+    public void setValeur(int valeur) {
+        this.valeur=valeur;
+    }
+    public  void  setValeur(String couleur){
+        this.couleur=couleur;
+    }
 }
